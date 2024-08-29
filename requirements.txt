@@ -1,0 +1,8 @@
+yum install python39
+python39 -m pip install ansible
+yum install yum-utils createrepo
+
+mkdir /home/ansible/repos
+mkdir /Repository/Logs/8.9
+mkdir /Repository/Logs/8.10
+mkdir /Repository/Logs/7.6

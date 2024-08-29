@@ -1,0 +1,11 @@
+[rhel-8-for-x86_64-baseos-source-rpms]
+name = Red Hat Enterprise Linux 8 for x86_64 - BaseOS (Source RPMs)
+baseurl = file:///ansible.civ.local/Repository/RHEL8/rhel89/baseos
+enabled = 0
+gpgcheck = 1
+
+[rhel-8-for-x86_64-appstream-rpms]
+name = Red Hat Enterprise Linux 8 for x86_64 - AppStream (RPMs)
+baseurl = file:///ansible.civ.local/Repository/RHEL8/rhel89/appstream
+enabled = 0
+gpgcheck = 1
