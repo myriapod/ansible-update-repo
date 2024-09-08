@@ -14,8 +14,8 @@ echo "-- Script de récupération des paquets pour Rhel 8.9, 8.10 et Centos 7.6"
 echo "Attention: Centos 7.6 est EOL, il n'y a pas de nouveaux paquets mis à jour."
 
 echo "Définition des options de récupération des repos:"
-read -p "Par defaut, l'option --newest-only est appliquée. Voulez-vous télécharger toutes versions disponnibles ? (Y/n) " choix_option
-if [ $choix_option = "Y" ]; then options=""; done
+read -p "Par defaut, l'option --newest-only est appliquée. Voulez-vous télécharger toutes les versions disponnibles ? (Y/n) " choix_option
+if [ $choix_option = "Y" ]; then options=""; fi
 
 # Loop pour les OS Rhel 8.9, Rhel 8.10 et Centos7.6
 for OS in RHEL8 Centos7
