@@ -32,7 +32,7 @@ do
             subscription-manager release --set=$OS_version && rm -rf /var/cache/dnf &>> $LOGFILE
 
             # Récupération des repos baseos et appstream
-            for repo in baseos appstream; do echo Reposync pour $OS $OS_version - $repo ; reposync -p /Repository/$OS/$OS_version --download-metadata --repoid=rhel-8-for-x86_64-$repo-rpms $options &>> $LOGFILE && echo "Reposync réussi" || echo "Quelque chose s'est mal passé, consultez $LOGFILE pour plus d'informations" ; done
+            for repo in baseos appstream; do echo Reposync pour $OS $OS_version - $repo ; reposync -p /Repository/$OS/$OS_version --download-metadata --repoid=rhel-8-for-x86_64-$repo $options &>> $LOGFILE && echo "Reposync réussi" || echo "Quelque chose s'est mal passé, consultez $LOGFILE pour plus d'informations" ; done
         done
 
     else # pour les Centos 7.6

@@ -20,7 +20,7 @@
 
   - name: Copie du fichier de repo
     ansible.builtin.copy:
-      src: /etc/yum.repos.d/rhel810.repo
+      src: /home/ansible/repos/rhel810.repo
       dest: /etc/yum.repos.d/rhel810.repo.bak
       owner: root
       group: root
